@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int A = 0 ;
+    printf( "your Number") ;
+    scanf( "%d", &A ) ;
+    for(int i = 1 ; i <= A ; i ++ ) {
+        for(int j = 1 ; j <= A ; j++ ) {
+            if((A % 2 == 0 && i == j) || (A % 2 != 0 && j == A-i+1)) {
+                printf( "1" ) ;
+            } else {
+                printf( "0" ) ;
+            }//end if
+        } // end for J
+        printf( "\n" ) ;
+    } //end for i
+}//end function
